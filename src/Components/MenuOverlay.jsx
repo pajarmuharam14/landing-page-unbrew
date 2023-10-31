@@ -2,7 +2,7 @@
 // eslint-disable-next-line react/prop-types
 const MenuOverlay = ({ menuList }) => {
   return (
-    <div className="bg-[#2A3A60] text-white md:hidden">
+    <div className="bg-[#2A3A60] text-white lg:hidden">
       {menuList.map((menu) => (
         <nav key={menu.id}>
           <ul>

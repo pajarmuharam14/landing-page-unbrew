@@ -42,14 +42,14 @@ const Header = () => {
   ];
   return (
     <>
-      <div className="flex justify-between md:justify-around bg-[#2A3A60] w-full h-[80px] md:bg-[#795DDB] ">
+      <div className="flex justify-between lg:justify-around bg-[#2A3A60] w-full h-[80px] lg:bg-[#795DDB] ">
         <div className="logo">
           <h1 className="text-white text-2xl md:text-4xl font-bold mx-4 my-5 md:my-[18px] ">Unbrew.</h1>
         </div>
-        <div className="nav text-white cursor-pointer md:flex">
-          {!toggle ? <BiMenu className="text-4xl mr-2 my-6  md:hidden" onClick={handleClick} /> : <FaXmark className="text-4xl mr-2 my-6  md:hidden" onClick={handleClick} />}
+        <div className="nav text-white cursor-pointer lg:flex">
+          {!toggle ? <BiMenu className="text-4xl mr-2 my-6  lg:hidden" onClick={handleClick} /> : <FaXmark className="text-4xl mr-2 my-6  lg:hidden" onClick={handleClick} />}
           {menuList.map((menu) => (
-            <nav key={menu.id} className="hidden md:block">
+            <nav key={menu.id} className="hidden lg:block">
               <ul>
                 <li className="mx-5 my-8 font-semibold hover:font-normal">{menu.title}</li>
               </ul>

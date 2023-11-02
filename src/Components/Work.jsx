@@ -96,9 +96,9 @@ const Work = () => {
       />
       <div className="md:flex md:flex-wrap w-full mt-5">
         { listPortfolio.map( ( portfolio ) => (
-          <div key={ portfolio.id } className="my-7 w-[370px] mx-auto lg:w-[310px] md:w-[350px] hover:bg-blue-100 pb-1">
+          <div key={ portfolio.id } className="my-9 w-[370px] mx-auto lg:w-[310px] md:w-[350px] hover:bg-blue-100 pb-2 cursor-pointer">
             <img src={ portfolio.image } />
-            <h1 className="my-3 mx-2 text-white bg-blue-400 w-[150px] p-1 text-[14px] font-bold border border-blue-400">{portfolio.category}</h1>
+            <h1 className="my-3 mx-2 text-white bg-blue-400 w-[150px] p-1 text-[14px] font-semibold border border-blue-400 rounded-md">{portfolio.category}</h1>
             <h1 className="my-3 mx-2 text-[#757F98] font-semibold text-[20px]">{portfolio.title}</h1>
           </div>
         ))}

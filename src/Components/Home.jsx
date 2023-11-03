@@ -1,6 +1,7 @@
 import About from "./About";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Pricing from "./Pricing";
@@ -18,6 +19,7 @@ const Home = () => {
       <Pricing />
       <Blog />
       <Contact />
+      <Footer />
     </div>
   );
 };

@@ -87,7 +87,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className=" mx-auto my-10">
+    <div className=" mx-auto my-20">
       <DescriptionPages
         styleContainer="text-center"
         title="OUR PORTFOLIO"

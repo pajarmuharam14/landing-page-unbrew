@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="md:flex md:justify-center md:items-center ml-2">
+    <div className="md:flex md:justify-center md:items-center ml-2 my-20">
       <img src={aboutIllustration} className="w-[450px] mt-12 mb-5 lg:mx-10" />
       <div>
         <DescriptionPages styleContainer="lg:w-[300px] lg:mt-16 mx-2"

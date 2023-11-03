@@ -5,7 +5,7 @@ import DescriptionPages from "./DescriptionPages";
 import { AiOutlineCheck } from "react-icons/ai";
 const Pricing = () => {
   return (
-    <div>
+    <div className="my-20">
       <DescriptionPages
         styleContainer="text-center"
         title="PRICING"

@@ -7,7 +7,7 @@ const Hero = ({ content }) => {
     <div className="bg-[#795DDB] h-[550px] flex flex-col-reverse justify-center items-center md:flex md:flex-row md:justify-evenly">
       {content ? (
         <div>
-          <h1 className="text-white">{content}</h1>.
+          <h1 className="text-white text-5xl mt-[-50px] text-center">{content}</h1>.
         </div>
       ) : (
         <>

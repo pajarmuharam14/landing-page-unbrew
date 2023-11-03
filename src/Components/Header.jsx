@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { FaXmark } from "react-icons/fa6";
 import MenuOverlay from "./MenuOverlay";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,30 +15,32 @@ const Header = () => {
     {
       id: 1,
       title: "Home",
+      page: "/",
     },
     {
       id: 2,
       title: "About",
+      page: "/about",
     },
     {
       id: 3,
       title: "Services",
+      page: "/services",
     },
     {
       id: 4,
       title: "Pricing",
+      page: "/price",
     },
     {
       id: 5,
       title: "Work",
+      page: "/portfolio",
     },
     {
       id: 6,
       title: "Blog",
-    },
-    {
-      id: 7,
-      title: "Contact",
+      page: "/blog",
     },
   ];
   return (
@@ -51,7 +54,9 @@ const Header = () => {
           {menuList.map((menu) => (
             <nav key={menu.id} className="hidden lg:block">
               <ul>
-                <li className="mx-5 my-8 font-semibold hover:font-normal">{menu.title}</li>
+                <Link to={menu.page}>
+                  <li className="mx-5 my-8 font-semibold hover:font-normal">{menu.title}</li>
+                </Link>
               </ul>
             </nav>
           ))}

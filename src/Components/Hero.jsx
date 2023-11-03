@@ -20,7 +20,7 @@ const Hero = ({ content }) => {
             </div>
           </div>
           <div className="illustration-section">
-            <img src={heroIllustration} className="w-[400px]" />
+            <img src={heroIllustration} className="w-[450px]" />
           </div>
         </>
       )}

@@ -34,12 +34,12 @@ const Blog = () => {
 
 const CardBlog = ({image}) => {
   return (
-    <div className="w-[370px] my-9 mx-auto md:w-[350px] lg:w-[310px]">
+    <div className="w-[370px] my-9 mx-auto border md:w-[350px] lg:w-[310px]">
       <img src={image} className="cursor-pointer" />
       <h1 className="font-bold text-[18px] md:text-[20px] hover:text-[#1FB6FC] mt-1 cursor-pointer">Explore The Best Restaurant in New York</h1>
-      <div className="mt-5 flex">
+      <div className="mt-3 flex">
         <span className="mx-1 text-[#9291A6] font-semibold">DEC. 05, 2020</span>
-        <h3 className="mx-2 text-[#1FB6FC] font-semibold">BY JOHAN STEVENSON</h3>
+        <h3 className="mx-2 mb-3 text-[#1FB6FC] font-semibold">BY JOHAN STEVENSON</h3>
       </div>
     </div>
   );
